@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,12 @@
 		CDD836C624AA70CD00019369 /* FirebaseReviewLessonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD836C524AA70CD00019369 /* FirebaseReviewLessonTests.swift */; };
 		CDD836D124AA70CD00019369 /* FirebaseReviewLessonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD836D024AA70CD00019369 /* FirebaseReviewLessonUITests.swift */; };
 		CDD836DF24AA713300019369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDD836DE24AA713300019369 /* GoogleService-Info.plist */; };
+		CDDECEDB24AA726E00A621F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDECEDA24AA726E00A621F3 /* User.swift */; };
+		CDDECEDD24AA727700A621F3 /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDECEDC24AA727700A621F3 /* Like.swift */; };
+		CDDECEE324AA740600A621F3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDECEE224AA740600A621F3 /* AuthService.swift */; };
+		CDDECEE524AA756100A621F3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDECEE424AA756100A621F3 /* Post.swift */; };
+		CDDECEE724AA757200A621F3 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDECEE624AA757200A621F3 /* FirebaseService.swift */; };
+		CDDECEE924AA79FB00A621F3 /* FirebaseConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDECEE824AA79FB00A621F3 /* FirebaseConvertible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,12 @@
 		CDD836D024AA70CD00019369 /* FirebaseReviewLessonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReviewLessonUITests.swift; sourceTree = "<group>"; };
 		CDD836D224AA70CD00019369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD836DE24AA713300019369 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDDECEDA24AA726E00A621F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CDDECEDC24AA727700A621F3 /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
+		CDDECEE224AA740600A621F3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		CDDECEE424AA756100A621F3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Post.swift; path = /Users/benjaminstone/Desktop/FirebaseReviewLesson/FirebaseReviewLesson/Models/Post.swift; sourceTree = "<absolute>"; };
+		CDDECEE624AA757200A621F3 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseService.swift; path = /Users/benjaminstone/Desktop/FirebaseReviewLesson/FirebaseReviewLesson/Firebase/FirebaseService.swift; sourceTree = "<absolute>"; };
+		CDDECEE824AA79FB00A621F3 /* FirebaseConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConvertible.swift; sourceTree = "<group>"; };
 		DBB30D30083E131ADE37207F /* Pods-FirebaseReviewLesson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseReviewLesson.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseReviewLesson/Pods-FirebaseReviewLesson.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +125,6 @@
 				C8A4A92C286B178AB099856D /* Pods-FirebaseReviewLessonTests.debug.xcconfig */,
 				14D50F2A73896D280522141B /* Pods-FirebaseReviewLessonTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				CDD836AE24AA70CB00019369 /* AppDelegate.swift */,
+				CDDECEE124AA733300A621F3 /* Firebase */,
+				CDDECEDE24AA730600A621F3 /* Models */,
 				CDD836B024AA70CB00019369 /* SceneDelegate.swift */,
 				CDD836B224AA70CB00019369 /* ViewController.swift */,
 				CDD836B424AA70CB00019369 /* Main.storyboard */,
@@ -170,6 +183,26 @@
 				CDD836D224AA70CD00019369 /* Info.plist */,
 			);
 			path = FirebaseReviewLessonUITests;
+			sourceTree = "<group>";
+		};
+		CDDECEDE24AA730600A621F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDDECEE824AA79FB00A621F3 /* FirebaseConvertible.swift */,
+				CDDECEE424AA756100A621F3 /* Post.swift */,
+				CDDECEDA24AA726E00A621F3 /* User.swift */,
+				CDDECEDC24AA727700A621F3 /* Like.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDDECEE124AA733300A621F3 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				CDDECEE624AA757200A621F3 /* FirebaseService.swift */,
+				CDDECEE224AA740600A621F3 /* AuthService.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,9 +445,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDECEDD24AA727700A621F3 /* Like.swift in Sources */,
 				CDD836B324AA70CB00019369 /* ViewController.swift in Sources */,
+				CDDECEE924AA79FB00A621F3 /* FirebaseConvertible.swift in Sources */,
 				CDD836AF24AA70CB00019369 /* AppDelegate.swift in Sources */,
+				CDDECEE524AA756100A621F3 /* Post.swift in Sources */,
+				CDDECEE724AA757200A621F3 /* FirebaseService.swift in Sources */,
 				CDD836B124AA70CB00019369 /* SceneDelegate.swift in Sources */,
+				CDDECEDB24AA726E00A621F3 /* User.swift in Sources */,
+				CDDECEE324AA740600A621F3 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
